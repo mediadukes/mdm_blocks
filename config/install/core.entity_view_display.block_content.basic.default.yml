@@ -12,20 +12,10 @@ bundle: basic
 mode: default
 content:
   body:
-    type: text_textarea_with_summary
-    weight: -4
+    label: hidden
+    type: text_default
+    weight: 0
     region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-  info:
-    type: string_textfield
-    weight: -5
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }
