@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: gmap_block
+label: 'Google Map block'
+revision: 1
+description: 'A block that takes an address and generates an interactive google map.'

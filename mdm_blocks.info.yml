@@ -1,0 +1,10 @@
+name: MD Blocks
+description: MD default blocks configuration
+package: MD Custom
+dependencies:
+  - block
+  - block_content
+
+type: module
+core: 8.x
+version: VERSION

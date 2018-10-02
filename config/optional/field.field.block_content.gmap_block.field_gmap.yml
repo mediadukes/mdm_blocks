@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.gmap_block
+    - field.storage.block_content.field_gmap
+  module:
+    - google_map_field
+id: block_content.gmap_block.field_gmap
+field_name: field_gmap
+entity_type: block_content
+bundle: gmap_block
+label: 'Google map'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    preview: ''
+    actions: {  }
+    lat: '50.8502670132173'
+    name: 'Block Gmap'
+    lon: '4.352056410595651'
+    zoom: '7'
+    type: roadmap
+    width: 100%
+    height: 450px
+    marker: '1'
+    controls: '1'
+    infowindow: ''
+default_value_callback: ''
+settings: {  }
+field_type: google_map_field
