@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.gmap_block
+    - field.field.block_content.gmap_block.field_gmap
+  module:
+    - google_map_field
+id: block_content.gmap_block.default
+targetEntityType: block_content
+bundle: gmap_block
+mode: default
+content:
+  field_gmap:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
+    region: content
+hidden: {  }
