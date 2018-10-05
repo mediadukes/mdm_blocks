@@ -3,7 +3,7 @@
 This module installs Drupal core block and adds some useful configurion:
 
 - A basic block type to add simple textual blocks
-- If the [google_map_field](https://www.drupal.org/project/google_map_field) module is enabled it will add a block type to create google maps.
+- If the [geolocation](https://www.drupal.org/project/geolocation) module and it's google map submodule are enabled it will add a block type to create google maps.
 - When the [mdm_paragraphs](https://github.com/mediadukes/mdm_paragraphs) module is enabled it will add a block paragraph type using modules like [inline_entity_form](https://www.drupal.org/project/inline_entity_form) and [entity_browser](https://www.drupal.org/project/entity_browser) for an easy UX.
 
 ## Usage

@@ -3,18 +3,18 @@ status: true
 dependencies:
   config:
     - block_content.type.gmap_block
-    - field.storage.block_content.field_gmap
+    - field.storage.block_content.field_gmap_marker_content
   module:
-    - geolocation
-id: block_content.gmap_block.field_gmap
-field_name: field_gmap
+    - text
+id: block_content.gmap_block.field_gmap_marker_content
+field_name: field_gmap_marker_content
 entity_type: block_content
 bundle: gmap_block
-label: 'Google map'
+label: 'Marker content'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: geolocation
+field_type: text_long

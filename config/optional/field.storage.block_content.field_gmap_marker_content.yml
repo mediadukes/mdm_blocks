@@ -3,13 +3,13 @@ status: true
 dependencies:
   module:
     - block_content
-    - geolocation
-id: block_content.field_gmap
-field_name: field_gmap
+    - text
+id: block_content.field_gmap_marker_content
+field_name: field_gmap_marker_content
 entity_type: block_content
-type: geolocation
+type: text_long
 settings: {  }
-module: geolocation
+module: text
 locked: false
 cardinality: 1
 translatable: true

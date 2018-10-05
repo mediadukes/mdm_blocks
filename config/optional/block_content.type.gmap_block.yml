@@ -1,6 +1,8 @@
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - geolocation_google_maps
 id: gmap_block
 label: 'Google Map block'
 revision: 1
