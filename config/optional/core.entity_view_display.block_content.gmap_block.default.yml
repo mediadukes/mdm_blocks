@@ -6,6 +6,7 @@ dependencies:
     - field.field.block_content.gmap_block.field_gmap
     - field.field.block_content.gmap_block.field_gmap_marker_content
     - field.field.block_content.gmap_block.field_gmap_marker_title
+    - filter.format.full_html
   module:
     - geolocation_google_maps
 id: block_content.gmap_block.default
@@ -22,13 +23,16 @@ content:
       info_text:
         value: '[block_content:field_gmap_marker_content]'
         format: full_html
-      google_map_settings:
+      use_overridden_map_settings: 0
+      common_map: '1'
+      map_provider_id: google_maps
+      map_provider_settings:
         height: 400px
         width: 100%
         type: ROADMAP
-        zoom: '10'
-        maxZoom: '18'
-        minZoom: '0'
+        zoom: 10
+        maxZoom: 18
+        minZoom: 0
         gestureHandling: auto
         map_features:
           control_locate:
@@ -40,9 +44,9 @@ content:
             enabled: true
             weight: 0
             settings:
-              info_window_solitary: 1
-              disable_auto_pan: 1
-              info_auto_display: 0
+              info_window_solitary: true
+              disable_auto_pan: true
+              info_auto_display: false
           marker_infobubble:
             weight: 0
             settings:
@@ -85,7 +89,7 @@ content:
             settings:
               image_path: ''
               styles: ''
-              max_zoom: '15'
+              max_zoom: 15
             enabled: false
           map_type_style:
             weight: 0
@@ -140,9 +144,9 @@ content:
               strokeWeight: '2'
               fillColor: '#FF0000'
               fillOpacity: '0.35'
-              polyline: '0'
-              geodesic: '0'
-              polygon: '0'
+              polyline: false
+              geodesic: false
+              polygon: false
             enabled: false
           map_disable_poi:
             weight: 0
@@ -164,8 +168,6 @@ content:
         scrollwheel: false
         preferScrollingToZooming: false
         disableDoubleClickZoom: '0'
-      use_overridden_map_settings: 0
-      common_map: '1'
     third_party_settings: {  }
     type: geolocation_map
     region: content
